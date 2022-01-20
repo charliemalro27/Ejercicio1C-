@@ -2,9 +2,25 @@
 
 using namespace std;
 
+bool valorabsoluto(int num1){
+    if(num1<0){
+    return (num1*-1);
+
+    };
+}
+
+bool muchadiferencia(int numdiferencia, int num1, int num2){
+    numdiferencia=valorabsoluto(numdiferencia);
+    return (num1-num2>numdiferencia);
+}
+
+/*No se por que la funcion en el caso de valorabsoluto(edad) me devuelve 1*/
+
 int main() {
-    int edad=14;
+    int edad=-4;
     int edadinput;
+
+    cout<<valorabsoluto(edad)<<endl;
 
     cout<<"Que edad tienes?";
     cin>>edadinput;
