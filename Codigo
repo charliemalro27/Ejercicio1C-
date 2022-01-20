@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int edad=14;
+    int edadinput;
+
+    cout<<"Que edad tienes?";
+    cin>>edadinput;
+
+    if(edadinput>=edad){
+        cout<<"Eres to viejoooo";
+    }
+    if(edadinput<=edad){
+        cout<<"Eres to pequeeee";
+    }
+
+    return 0;
+}
